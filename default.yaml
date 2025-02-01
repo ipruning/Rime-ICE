@@ -41,7 +41,7 @@ switcher:
     - emoji
     - full_shape
     - search_single_char
-  fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
+  fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true，一个方案建议展开 false
   abbreviate_options: true      # 折叠时是否缩写选项
   option_list_separator: ' / '  # 折叠时的选项分隔符
 
@@ -68,9 +68,14 @@ switcher:
 #     Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
 #     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
 #     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
-
-
-###################################################################################
+ascii_composer:
+  good_old_caps_lock: false
+  switch_key:
+    Caps_Lock: noop
+    Shift_L: commit_code
+    Shift_R: commit_code
+    Control_L: noop
+    Control_R: noop
 
 
 # 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
