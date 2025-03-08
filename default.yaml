@@ -64,14 +64,14 @@ switcher:
 #     Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
 #     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
 #     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
-# ascii_composer:
-#   good_old_caps_lock: false
-#   switch_key:
-#     Caps_Lock: noop
-#     Shift_L: commit_code
-#     Shift_R: commit_code
-#     Control_L: noop
-#     Control_R: noop
+ascii_composer:
+  good_old_caps_lock: false
+  switch_key:
+    Caps_Lock: noop
+    Shift_L: commit_code
+    Shift_R: commit_code
+    Control_L: noop
+    Control_R: noop
 
 # 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
 # 写在 default.yaml 里，方便多个方案引用，就是不用每个方案都写一遍了。
